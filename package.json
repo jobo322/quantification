@@ -1,0 +1,55 @@
+{
+  "name": "quantification",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "eslint": "eslint src",
+    "eslint-fix": "npm run eslint -- --fix",
+    "test": "npm run test-coverage && npm run eslint",
+    "test-coverage": "jest --coverage",
+    "test-only": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobo322/quantification.git"
+  },
+  "keywords": [],
+  "author": "Alejandro Bolaños <jose.bolanos@correounivalle.edu.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jobo322/quantification/issues"
+  },
+  "homepage": "https://github.com/jobo322/quantification#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-cheminfo": "^2.0.4",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.7.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "jcampconverter": "^4.1.0",
+    "ml-curve-fitting": "0.0.7",
+    "ml-gsd": "^3.0.1",
+    "ml-matrix": "^2.0.0",
+    "ml-regression-multivariate-linear": "^2.0.3",
+    "ml-spectra-processing": "^2.0.1"
+  }
+}
